@@ -12,30 +12,30 @@
 
 ### Steps
 
-- Create a new project folder called node_fs
+- Create a new project folder called node_fs COMPLETE
 - Inside of node_fs, create the 4 following js files:
-  - createFile.js
-  - readFile.js
-  - updateFile.js
-  - deleteFile.js
+  - createFile.js COMPLETE
+  - readFile.js COMPLETE
+  - updateFile.js COMPLETE
+  - deleteFile.js COMPLETE
 - Inside of createFile.js:
-- Require the fs module
-- Implement the fs.writeFile() function, creating a txt file called HelloWorld.txt, with Hello, World! inside
-- Use the async version
-- Run node createFile.js to create the file
+  - Require the fs module COMPLETE
+  - Implement the fs.writeFile() function, creating a txt file called HelloWorld.txt, with Hello, World! inside COMPLETE
+  - Use the async version COMPLETE
+- Run node createFile.js to create the file COMPLETE
 - Inside of readFile.js:
-  - Require the fs module
-  - Implement the fs.readFile()
-  - You can either read the contents of the HelloWorld.txt file, or any other file you create in your project
-  - Run node readFile.js to read the file to the console
-- Inside of updateFile.js
-  - Require the fs module
-  - Using the appendFile() function, append some text to the end of your HelloWorld.txt
-  - Run node update.js
+  - Require the fs module COMPLETE
+  - Implement the fs.readFile() COMPLETE
+  - You can either read the contents of the HelloWorld.txt file, or any other file you create in your project COMPLETE
+  - Run node readFile.js to read the file to the console COMPLETE
+- Inside of updateFile.js COMPLETE
+  - Require the fs module COMPLETE
+  - Using the appendFile() function, append some text to the end of your HelloWorld.txt COMPLETE
+  - Run node update.js COMPLETE
 - Inside of deleteFile.js
-  - Require the fs module
-  - Implement the fs.unlink()
-  - Run node deleteFile.js
+  - Require the fs module COMPLETE
+  - Implement the fs.unlink() COMPLETE
+  - Run node deleteFile.js COMPLETE
 
 ### BONUS
 
