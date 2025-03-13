@@ -41,7 +41,10 @@
 
 #### Part 1:
 
-- Using both the http and fs module, create a server that sends an html page back to the client upon request. You must have at minimum two html pages with corresponding routes, and a 404 not found page.
+- Create a server that...
+  - uses the http and fs modules
+  - sends an html page back to the client upon request.
+- You must have at minimum two html pages with corresponding routes, and a 404 not found page.
 
 #### Part 2:
 

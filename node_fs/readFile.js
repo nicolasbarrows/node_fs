@@ -1,6 +1,6 @@
-const fs = require("fs");
+const { readFile } = require("fs");
 
-fs.readFile("HelloWorld.txt", (err, data) => {
+readFile("HelloWorld.txt", (err, data) => {
   if (err) {
     console.error(err);
     return;
@@ -8,3 +8,5 @@ fs.readFile("HelloWorld.txt", (err, data) => {
     console.log(data.toString());
   }
 });
+
+exports.readFile = readFile;
