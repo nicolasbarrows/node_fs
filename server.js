@@ -7,19 +7,6 @@ const http = require("http");
 const fs = require("fs");
 const port = 3000;
 
-function readFile(filePath, res) {
-  fs.readFile(filePath, (err, data) => {
-    if (err) {
-      console.error(err);
-      res.writeHead(404, { "Content-Type": "text/html" });
-      res.end("<h1>404 Not Found<h1>");
-      return;
-    }
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.end(data);
-  });
-}
-
 function getContent(method, url, res) {
   switch (url) {
     case "/":
@@ -37,9 +24,9 @@ function getContent(method, url, res) {
 }
 
 http
-  .createServer(function (req, res) {
+  .createServer((req, res) => {
     getContent(req.method, req.url, res);
   })
-  .listen(port, function () {
+  .listen(port, () => {
     console.log(`Server listening on port: ${port}`);
   });
