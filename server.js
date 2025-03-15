@@ -4,22 +4,23 @@
 //You must have at minimum two html pages with corresponding routes, and a 404 not found page.
 
 const http = require("http");
-const fs = require("fs");
+const { readFileWithRes } = require("./node_fs/readFile");
+
 const port = 3000;
 
 function getContent(method, url, res) {
   switch (url) {
     case "/":
       console.log(`${method} request from ${url}`);
-      readFile("./pages/home.html", res);
+      readFileWithRes("./pages/home.html", res);
       break;
     case "/about":
       console.log(`${method} request from ${url} faijbnaioluwbe`);
-      readFile("./pages/about.html", res);
+      readFileWithRes("./pages/about.html", res);
       break;
     default:
       console.log(`404 Not Found! url: ${url}`);
-      readFile("./pages/404.html", res);
+      readFileWithRes("./pages/404.html", res);
   }
 }
 
